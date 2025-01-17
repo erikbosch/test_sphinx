@@ -69,11 +69,28 @@ The HTML pages are in _build/html.
 
 ## PlantUML
 
-sudo apt install plantuml
+You can easily add UML
+
+`sudo apt install plantuml`
 
 Follow https://github.com/sphinx-contrib/plantuml/blob/master/README.rst
 
-pip install sphinxcontrib-plantuml
+`pip install sphinxcontrib-plantuml`
+
+
+See example in architecture
+
+## Themes
+
+To make it look better. This is a quite common theme
+
+https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
+
+## Workflow
+
+See https://coderefinery.github.io/documentation/gh_workflow/
+
+
 
 
 
