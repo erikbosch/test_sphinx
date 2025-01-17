@@ -88,7 +88,9 @@ https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
 
 ## Workflow
 
-See https://coderefinery.github.io/documentation/gh_workflow/
+See https://coderefinery.github.io/documentation/gh_workflow/ for configuration
+
+Result will be available in the `gh-pages` branch and deployed at https://erikbosch.github.io/test_sphinx/index.html
 
 
 
