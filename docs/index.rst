@@ -15,4 +15,5 @@ This is an overview of the product.
 
    architecture/index
    usage/index
+   python-doc/modules
 
