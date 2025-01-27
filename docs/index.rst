@@ -13,7 +13,7 @@ This is an overview of the product.
    :maxdepth: 2
    :caption: Contents:
 
-   architecture/index
    usage/index
+   architecture/index
    python-doc/modules
 
