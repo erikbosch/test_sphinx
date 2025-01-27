@@ -13,3 +13,27 @@ This is an overview of the architecture.
    Alice -> Bob: Hi!
    Alice <- Bob: How are you?
 
+
+Below is code to add a table
+
+.. list-table:: My Table
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Heading row 1, column 1
+     - Heading row 1, column 2
+     - Heading row 1, column 3
+   * - Row 1, column 1
+     -
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+     - Row 2, column 3
+
+Below is an example showing some python code
+
+.. code-block:: python
+
+  pygments_style = 'sphinx'
+
+End of document

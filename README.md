@@ -86,6 +86,12 @@ To make it look better. This is a quite common theme
 
 https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/
 
+Install by 
+
+`pip install sphinx-rtd-theme`
+
+Change `html_theme` in `conf.py`.
+
 ## Workflow
 
 See https://coderefinery.github.io/documentation/gh_workflow/ for configuration
