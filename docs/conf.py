@@ -9,6 +9,10 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../'))
 
+
+code_path = os.path.join(os.path.dirname(__file__), "../", "module1/")
+sys.path.append(code_path)
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -21,7 +25,8 @@ author = 'Accelerate Team'
 
 extensions = [
     'sphinxcontrib.plantuml',
-    'sphinxcontrib.apidoc'
+    'sphinxcontrib.apidoc',
+    'sphinx_needs'
 ]
 
 templates_path = ['_templates']
@@ -44,3 +49,35 @@ apidoc_toc_file = False
 # apidoc_excluded_paths = ['tests']
 apidoc_separate_modules = True
 
+needs_types = [dict(directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"),
+               dict(directive="component", title="Specification", prefix="C_", color="#FEDCD2", style="node"),
+               dict(directive="impl", title="Implementation", prefix="I_", color="#DF744A", style="node"),
+               dict(directive="arch", title="Architecture", prefix="A_", color="#D2244A", style="node")
+           ]
+
+
+needs_extra_options = ['jira']
+
+needs_string_links = {
+    
+    # Links to the related jira issue
+    'jira_link': {
+        'regex': r'^(?P<value>\w+)$',
+        'link_url': 'https://useblocks.atlassian.net/browse/ADAS-{{value}}',
+        'link_name': 'JIRA ADAS #{{value}}',
+        'options': ['jira']
+    }
+}
+
+needs_extra_links = [
+   {  # impl -> arch
+      "option": "implements",
+      "incoming": "implemented_by",
+      "outgoing": "implements",
+   },
+   {  # impl ->req, arch->req
+      "option": "fulfil",
+      "incoming": "fulfilled by",
+      "outgoing": "fulfils",
+   }
+]

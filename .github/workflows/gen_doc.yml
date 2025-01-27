@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt install plantuml
-          pip install sphinx sphinx_rtd_theme myst_parser sphinxcontrib-plantuml sphinxcontrib-apidoc
+          pip install sphinx sphinx_rtd_theme myst_parser sphinxcontrib-plantuml sphinxcontrib-apidoc sphinx-needs pillow
       - name: Sphinx build
         run: |
           sphinx-build docs _build

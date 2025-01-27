@@ -36,4 +36,35 @@ Below is an example showing some python code
 
   pygments_style = 'sphinx'
 
+Showing some Sphinx Needs items
+
+.. arch:: Lane Detection Subsystem
+   :id: A_001
+   :status: open
+   :fulfil: R_001, R_002
+   :jira: 3
+
+   Design the software architecture for the Lane Detection Subsystem, including data acquisition, processing, and corrective action modules.
+
+   .. uml::
+
+      @startuml
+      class LaneDetection {
+          + detectLaneMarkings()
+          + applySteeringCorrection()
+      }
+      class CameraInput {
+          + provideData()
+      }
+      class SteeringControl {
+          + correctSteering()
+      }
+      LaneDetection --> CameraInput
+      LaneDetection --> SteeringControl
+      @enduml
+
+
+.. needflow:: My first needflow
+   :show_link_names:
+   
 End of document

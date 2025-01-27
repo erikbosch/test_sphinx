@@ -32,6 +32,8 @@ class Person:
                 family name of the person
             age : int
                 age of the person
+
+
         """
 
         self.name = name
@@ -58,6 +60,13 @@ class Person:
 
 def JustDuIt(name):
     """
+    .. impl:: Something
+        :id: I_001
+        :implements: A_001
+        :fulfil: R_001
+
+        Implements something to do something
+
     Who are you?
 
     Parameters
