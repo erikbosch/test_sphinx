@@ -30,5 +30,11 @@ Some needs
    Implement a feature to trigger warnings if the vehicle deviates from its lane without proper signaling.
 
 
-.. needflow:: My first needflow
-   :show_link_names:
+.. needtable:: Requirement table
+   :types: req
+   :columns: id;title;implements
+
+
+.. needtable:: Architecture table
+   :types: arch
+   :columns: id;title;links

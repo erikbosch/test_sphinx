@@ -4,7 +4,7 @@ Architecture
 .. toctree::
    :maxdepth: 1
 
-   ./component2.rst
+   component2
    component3
 
 This is an overview of the architecture.
@@ -65,7 +65,7 @@ Showing some Sphinx Needs items
       @enduml
 
 
-.. needflow:: My first needflow
+.. needflow:: Dependency Grpah
    :show_link_names:
 
 End of document

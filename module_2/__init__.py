@@ -3,21 +3,6 @@ class Dog:
     """
     A class to represent a Dog.
 
-    ...
-
-    Attributes
-    ----------
-    name : str
-        first name of the Dog
-    surname : str
-        family name of the Dog
-    age : int
-        age of the Dog
-
-    Methods
-    -------
-    info(additional=""):
-        Prints the Dog's name and age.
     """
 
     def __init__(self, name, surname, age):

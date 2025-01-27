@@ -47,7 +47,7 @@ apidoc_module_dir = '..'
 apidoc_output_dir = 'python-doc'
 apidoc_toc_file = False
 # apidoc_excluded_paths = ['tests']
-apidoc_separate_modules = True
+# apidoc_separate_modules = True
 
 needs_types = [dict(directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"),
                dict(directive="component", title="Specification", prefix="C_", color="#FEDCD2", style="node"),
