@@ -32,9 +32,11 @@ Some needs
 
 .. needtable:: Requirement table
    :types: req
-   :columns: id;title;implements
+   :style: table
 
+Table above using default columns, configurable by "needs_table_columns" in conf.py
 
 .. needtable:: Architecture table
    :types: arch
-   :columns: id;title;links
+   :style: table
+   :columns: id;title;jira, fulfil
