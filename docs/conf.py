@@ -26,7 +26,9 @@ author = 'Accelerate Team'
 extensions = [
     'sphinxcontrib.plantuml',
     'sphinxcontrib.apidoc',
-    'sphinx_needs'
+    'sphinx_needs',
+    'sphinx.ext.napoleon',
+    'sphinx_epytext'
 ]
 
 templates_path = ['_templates']
