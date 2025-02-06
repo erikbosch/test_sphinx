@@ -28,7 +28,8 @@ extensions = [
     'sphinxcontrib.apidoc',
     'sphinx_needs',
     'sphinx.ext.napoleon',
-    'sphinx_epytext'
+    'sphinx_epytext',
+    'breathe'
 ]
 
 templates_path = ['_templates']
@@ -83,3 +84,10 @@ needs_extra_links = [
       "outgoing": "fulfils",
    }
 ]
+
+
+# Breathe for C++ support
+breathe_projects = {
+"cc": "../CatCutifier/xml",
+}
+breathe_default_project = "cc"

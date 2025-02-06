@@ -16,4 +16,5 @@ This is an overview of the product.
    usage/index
    architecture/index
    python-doc/modules
+   cat
 
