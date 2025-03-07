@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proto Documentation &mdash; Accelerate  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+      <script src="../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+      <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+      <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+      <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Cat Docs" href="../cat.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Accelerate
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python-doc/modules.html">Accelerate Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cat.html">Cat Docs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Proto Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#protocol-documentation">Protocol Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hej-proto">hej.proto</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#searchrequest">SearchRequest</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#scalar-value-types">Scalar Value Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Accelerate</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Proto Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/proto/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="proto-documentation">
+<h1>Proto Documentation<a class="headerlink" href="#proto-documentation" title="Link to this heading"></a></h1>
+<section id="protocol-documentation">
+<h2>Protocol Documentation<a class="headerlink" href="#protocol-documentation" title="Link to this heading"></a></h2>
+<p><a name="top"></a></p>
+<section id="table-of-contents">
+<h3>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="#hej-proto"><span class="xref myst">hej.proto</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#foo-bar-SearchRequest"><span class="xref myst">SearchRequest</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#scalar-value-types">Scalar Value Types</a></p></li>
+</ul>
+<p><a name="hej-proto"></a></p>
+<p align="right"><a href="#top">Top</a></p>
+</section>
+<section id="hej-proto">
+<h3>hej.proto<a class="headerlink" href="#hej-proto" title="Link to this heading"></a></h3>
+<p><a name="foo-bar-SearchRequest"></a></p>
+<section id="searchrequest">
+<h4>SearchRequest<a class="headerlink" href="#searchrequest" title="Link to this heading"></a></h4>
+<p>SearchRequest represents a search query, with pagination options to
+indicate which results to include in the response.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Label</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>query</p></td>
+<td><p><a class="reference internal" href="#string"><span class="xref myst">string</span></a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>page_number</p></td>
+<td><p><a class="reference internal" href="#int32"><span class="xref myst">int32</span></a></p></td>
+<td><p></p></td>
+<td><p>Which page number do we want?</p></td>
+</tr>
+<tr class="row-even"><td><p>results_per_page</p></td>
+<td><p><a class="reference internal" href="#int32"><span class="xref myst">int32</span></a></p></td>
+<td><p></p></td>
+<td><p>Number of results to return per page.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="scalar-value-types">
+<h3>Scalar Value Types<a class="headerlink" href="#scalar-value-types" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>.proto Type</p></th>
+<th class="head"><p>Notes</p></th>
+<th class="head"><p>C++</p></th>
+<th class="head"><p>Java</p></th>
+<th class="head"><p>Python</p></th>
+<th class="head"><p>Go</p></th>
+<th class="head"><p>C#</p></th>
+<th class="head"><p>PHP</p></th>
+<th class="head"><p>Ruby</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a name="double" /> double</p></td>
+<td><p></p></td>
+<td><p>double</p></td>
+<td><p>double</p></td>
+<td><p>float</p></td>
+<td><p>float64</p></td>
+<td><p>double</p></td>
+<td><p>float</p></td>
+<td><p>Float</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="float" /> float</p></td>
+<td><p></p></td>
+<td><p>float</p></td>
+<td><p>float</p></td>
+<td><p>float</p></td>
+<td><p>float32</p></td>
+<td><p>float</p></td>
+<td><p>float</p></td>
+<td><p>Float</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="int32" /> int32</p></td>
+<td><p>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead.</p></td>
+<td><p>int32</p></td>
+<td><p>int</p></td>
+<td><p>int</p></td>
+<td><p>int32</p></td>
+<td><p>int</p></td>
+<td><p>integer</p></td>
+<td><p>Bignum or Fixnum (as required)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="int64" /> int64</p></td>
+<td><p>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead.</p></td>
+<td><p>int64</p></td>
+<td><p>long</p></td>
+<td><p>int/long</p></td>
+<td><p>int64</p></td>
+<td><p>long</p></td>
+<td><p>integer/string</p></td>
+<td><p>Bignum</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="uint32" /> uint32</p></td>
+<td><p>Uses variable-length encoding.</p></td>
+<td><p>uint32</p></td>
+<td><p>int</p></td>
+<td><p>int/long</p></td>
+<td><p>uint32</p></td>
+<td><p>uint</p></td>
+<td><p>integer</p></td>
+<td><p>Bignum or Fixnum (as required)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="uint64" /> uint64</p></td>
+<td><p>Uses variable-length encoding.</p></td>
+<td><p>uint64</p></td>
+<td><p>long</p></td>
+<td><p>int/long</p></td>
+<td><p>uint64</p></td>
+<td><p>ulong</p></td>
+<td><p>integer/string</p></td>
+<td><p>Bignum or Fixnum (as required)</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="sint32" /> sint32</p></td>
+<td><p>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s.</p></td>
+<td><p>int32</p></td>
+<td><p>int</p></td>
+<td><p>int</p></td>
+<td><p>int32</p></td>
+<td><p>int</p></td>
+<td><p>integer</p></td>
+<td><p>Bignum or Fixnum (as required)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="sint64" /> sint64</p></td>
+<td><p>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s.</p></td>
+<td><p>int64</p></td>
+<td><p>long</p></td>
+<td><p>int/long</p></td>
+<td><p>int64</p></td>
+<td><p>long</p></td>
+<td><p>integer/string</p></td>
+<td><p>Bignum</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="fixed32" /> fixed32</p></td>
+<td><p>Always four bytes. More efficient than uint32 if values are often greater than 2^28.</p></td>
+<td><p>uint32</p></td>
+<td><p>int</p></td>
+<td><p>int</p></td>
+<td><p>uint32</p></td>
+<td><p>uint</p></td>
+<td><p>integer</p></td>
+<td><p>Bignum or Fixnum (as required)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="fixed64" /> fixed64</p></td>
+<td><p>Always eight bytes. More efficient than uint64 if values are often greater than 2^56.</p></td>
+<td><p>uint64</p></td>
+<td><p>long</p></td>
+<td><p>int/long</p></td>
+<td><p>uint64</p></td>
+<td><p>ulong</p></td>
+<td><p>integer/string</p></td>
+<td><p>Bignum</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="sfixed32" /> sfixed32</p></td>
+<td><p>Always four bytes.</p></td>
+<td><p>int32</p></td>
+<td><p>int</p></td>
+<td><p>int</p></td>
+<td><p>int32</p></td>
+<td><p>int</p></td>
+<td><p>integer</p></td>
+<td><p>Bignum or Fixnum (as required)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="sfixed64" /> sfixed64</p></td>
+<td><p>Always eight bytes.</p></td>
+<td><p>int64</p></td>
+<td><p>long</p></td>
+<td><p>int/long</p></td>
+<td><p>int64</p></td>
+<td><p>long</p></td>
+<td><p>integer/string</p></td>
+<td><p>Bignum</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="bool" /> bool</p></td>
+<td><p></p></td>
+<td><p>bool</p></td>
+<td><p>boolean</p></td>
+<td><p>boolean</p></td>
+<td><p>bool</p></td>
+<td><p>bool</p></td>
+<td><p>boolean</p></td>
+<td><p>TrueClass/FalseClass</p></td>
+</tr>
+<tr class="row-odd"><td><p><a name="string" /> string</p></td>
+<td><p>A string must always contain UTF-8 encoded or 7-bit ASCII text.</p></td>
+<td><p>string</p></td>
+<td><p>String</p></td>
+<td><p>str/unicode</p></td>
+<td><p>string</p></td>
+<td><p>string</p></td>
+<td><p>string</p></td>
+<td><p>String (UTF-8)</p></td>
+</tr>
+<tr class="row-even"><td><p><a name="bytes" /> bytes</p></td>
+<td><p>May contain any arbitrary sequence of bytes.</p></td>
+<td><p>string</p></td>
+<td><p>ByteString</p></td>
+<td><p>str</p></td>
+<td><p>[]byte</p></td>
+<td><p>ByteString</p></td>
+<td><p>string</p></td>
+<td><p>String (ASCII-8BIT)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../cat.html" class="btn btn-neutral float-left" title="Cat Docs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Accelerate Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

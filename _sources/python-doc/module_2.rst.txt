@@ -1,0 +1,10 @@
+module\_2 package
+=================
+
+Module contents
+---------------
+
+.. automodule:: module_2
+   :members:
+   :show-inheritance:
+   :undoc-members:

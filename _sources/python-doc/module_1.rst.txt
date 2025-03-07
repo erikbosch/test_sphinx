@@ -1,0 +1,21 @@
+module\_1 package
+=================
+
+Submodules
+----------
+
+module\_1.Person module
+-----------------------
+
+.. automodule:: module_1.Person
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: module_1
+   :members:
+   :show-inheritance:
+   :undoc-members:
