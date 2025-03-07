@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package foo.bar;
+
+/**
+ * SearchRequest represents a search query, with pagination options to
+ * indicate which results to include in the response.
+ */
+message SearchRequest {
+  string query = 1;
+
+  // Which page number do we want?
+  int32 page_number = 2;
+
+  // Number of results to return per page.
+  int32 results_per_page = 3;
+}

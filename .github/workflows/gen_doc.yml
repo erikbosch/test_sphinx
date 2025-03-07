@@ -14,13 +14,17 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt install plantuml doxygen cmake
-          pip install sphinx sphinx_rtd_theme myst_parser sphinxcontrib-plantuml sphinxcontrib-apidoc sphinx-needs pillow sphinx-epytext breathe
-      - name: Generate documentation for C++
+          pip install sphinx sphinx_rtd_theme myst_parser sphinxcontrib-plantuml sphinxcontrib-apidoc sphinx-needs pillow sphinx-epytext breathe myst-parser
+      - name: Generate documentation for Proto
         run: |
           cd CatCutifier
           cmake .
           cmake --build .
           doxygen
+      - name: Generate documentation for C++
+        run: |
+          docker run --rm   -v $(pwd)/docs/_build/proto:/out   -v $(pwd)/proto:/protos   pseudomuto/protoc-gen-doc --doc_opt=markdown,docs.md
+          sudo chown $USER $(pwd)/docs/_build/proto/docs.md
       - name: Sphinx build
         run: |
           sphinx-build docs _build

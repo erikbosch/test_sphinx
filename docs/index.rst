@@ -17,4 +17,5 @@ This is an overview of the product.
    architecture/index
    python-doc/modules
    cat
+   proto/index
 

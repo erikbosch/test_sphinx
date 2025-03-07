@@ -29,7 +29,8 @@ extensions = [
     'sphinx_needs',
     'sphinx.ext.napoleon',
     'sphinx_epytext',
-    'breathe'
+    'breathe',
+    "myst_parser",
 ]
 
 templates_path = ['_templates']
@@ -91,3 +92,7 @@ breathe_projects = {
 "cc": "../CatCutifier/xml",
 }
 breathe_default_project = "cc"
+
+#Myst for markdown include
+# Generate proper anchors
+myst_heading_anchors = 3

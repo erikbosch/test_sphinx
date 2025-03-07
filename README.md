@@ -1,6 +1,8 @@
 # Testing out Sphinx
 
-This repo is to test and show how Sphinx can be used
+This repo is to test and show how Sphinx can be used.
+
+Check out result [here](https://erikbosch.github.io/test_sphinx/proto/index.html).
 
 # Setup Used
 
@@ -97,6 +99,10 @@ Change `html_theme` in `conf.py`.
 See https://coderefinery.github.io/documentation/gh_workflow/ for configuration
 
 Result will be available in the `gh-pages` branch and deployed at https://erikbosch.github.io/test_sphinx/index.html
+
+## Notes
+
+There are more dependencies, check workflow.
 
 
 
